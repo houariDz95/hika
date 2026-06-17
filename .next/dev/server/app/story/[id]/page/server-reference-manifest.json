@@ -1,0 +1,101 @@
+{
+  "node": {
+    "001cb6b06f49d2a425b9638284eca1c0debcfa5fdd": {
+      "workers": {
+        "app/story/[id]/page": {
+          "moduleId": "[project]/.next-internal/server/app/story/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/posts.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "logout",
+          "filename": "src/actions/auth.ts"
+        }
+      },
+      "exportedName": "logout",
+      "filename": "src/actions/auth.ts"
+    },
+    "601ce9ff703127c461eb2785d4aacbcf08a049fa5f": {
+      "workers": {
+        "app/story/[id]/page": {
+          "moduleId": "[project]/.next-internal/server/app/story/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/posts.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "signup",
+          "filename": "src/actions/auth.ts"
+        }
+      },
+      "exportedName": "signup",
+      "filename": "src/actions/auth.ts"
+    },
+    "60cce53d2680028396785dd487fd6d8dac630923dd": {
+      "workers": {
+        "app/story/[id]/page": {
+          "moduleId": "[project]/.next-internal/server/app/story/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/posts.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "login",
+          "filename": "src/actions/auth.ts"
+        }
+      },
+      "exportedName": "login",
+      "filename": "src/actions/auth.ts"
+    },
+    "4017b357a207325af6759c9b46986c3631d9695416": {
+      "workers": {
+        "app/story/[id]/page": {
+          "moduleId": "[project]/.next-internal/server/app/story/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/posts.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "incrementViews",
+          "filename": "src/actions/posts.ts"
+        }
+      },
+      "exportedName": "incrementViews",
+      "filename": "src/actions/posts.ts"
+    },
+    "406805c80ec29cc3f02ab4033b2ec3e3b0662b053d": {
+      "workers": {
+        "app/story/[id]/page": {
+          "moduleId": "[project]/.next-internal/server/app/story/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/posts.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "likePost",
+          "filename": "src/actions/posts.ts"
+        }
+      },
+      "exportedName": "likePost",
+      "filename": "src/actions/posts.ts"
+    },
+    "40f2fd67489647456dd25cf5d727b63f429bbe7518": {
+      "workers": {
+        "app/story/[id]/page": {
+          "moduleId": "[project]/.next-internal/server/app/story/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/posts.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "deletePost",
+          "filename": "src/actions/posts.ts"
+        }
+      },
+      "exportedName": "deletePost",
+      "filename": "src/actions/posts.ts"
+    },
+    "6024781a9f3fc09b220a8371ab66f09df58d5ec27f": {
+      "workers": {
+        "app/story/[id]/page": {
+          "moduleId": "[project]/.next-internal/server/app/story/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/posts.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "updatePost",
+          "filename": "src/actions/posts.ts"
+        }
+      },
+      "exportedName": "updatePost",
+      "filename": "src/actions/posts.ts"
+    },
+    "6066345e135c161c767fd54ad3a80a325e7e55eca5": {
+      "workers": {
+        "app/story/[id]/page": {
+          "moduleId": "[project]/.next-internal/server/app/story/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/posts.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "createPost",
+          "filename": "src/actions/posts.ts"
+        }
+      },
+      "exportedName": "createPost",
+      "filename": "src/actions/posts.ts"
+    }
+  },
+  "edge": {}
+}

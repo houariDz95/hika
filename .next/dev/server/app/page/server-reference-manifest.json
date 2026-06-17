@@ -1,0 +1,41 @@
+{
+  "node": {
+    "001cb6b06f49d2a425b9638284eca1c0debcfa5fdd": {
+      "workers": {
+        "app/page": {
+          "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "logout",
+          "filename": "src/actions/auth.ts"
+        }
+      },
+      "exportedName": "logout",
+      "filename": "src/actions/auth.ts"
+    },
+    "601ce9ff703127c461eb2785d4aacbcf08a049fa5f": {
+      "workers": {
+        "app/page": {
+          "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "signup",
+          "filename": "src/actions/auth.ts"
+        }
+      },
+      "exportedName": "signup",
+      "filename": "src/actions/auth.ts"
+    },
+    "60cce53d2680028396785dd487fd6d8dac630923dd": {
+      "workers": {
+        "app/page": {
+          "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "login",
+          "filename": "src/actions/auth.ts"
+        }
+      },
+      "exportedName": "login",
+      "filename": "src/actions/auth.ts"
+    }
+  },
+  "edge": {}
+}
