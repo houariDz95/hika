@@ -3,6 +3,7 @@ import { Noto_Naskh_Arabic } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { SocialBarAd } from "@/components/AdBanners";
 
 const notoNaskh = Noto_Naskh_Arabic({
   subsets: ["arabic"],
@@ -28,9 +29,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ar" dir="rtl" className={notoNaskh.variable}>
+      <head>
+             <script data-cfasync="false" src="https://pl29778344.effectivecpmnetwork.com/515cdc36e4304b0c9d8a061b8f64cad8/invoke.js"></script>
+      </head>
       <body className="min-h-screen bg-neutral-50 text-neutral-900 antialiased flex flex-col">
         <Navbar />
         <main className="flex-1">{children}</main>
+        <SocialBarAd />
         <Footer />
       </body>
     </html>
