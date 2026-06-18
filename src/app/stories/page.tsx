@@ -3,6 +3,7 @@ import PostCard from "@/components/PostCard";
 import CategoryFilter from "@/components/CategoryFilter";
 import SearchBar from "@/components/SearchBar";
 import Pagination from "@/components/Pagination";
+import { AdBanner728, AdBannerMobile } from "@/components/AdBanners";
 import type { Post } from "@/types";
 
 const PAGE_SIZE = 6;
@@ -56,6 +57,11 @@ export default async function StoriesPage({
         <CategoryFilter active={category} query={query} />
       </div>
 
+      <div className="mb-8 hidden lg:block">
+        <AdBanner728 />
+        <div id="container-515cdc36e4304b0c9d8a061b8f64cad8"></div>
+      </div>
+
       {query && (
         <p className="mb-4 text-sm text-neutral-500">
           نتائج البحث عن: <span className="font-semibold">{query}</span>
@@ -81,6 +87,10 @@ export default async function StoriesPage({
         basePath="/stories"
         searchParams={{ category, q: query }}
       />
+
+      <div className="mt-8 block lg:hidden">
+        <AdBannerMobile />
+      </div>
     </div>
   );
 }
