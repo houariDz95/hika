@@ -6,6 +6,7 @@ import { incrementViews } from "@/actions/posts";
 import { formatDate } from "@/lib/format-date";
 import LikeButton from "@/components/LikeButton";
 import PostCard from "@/components/PostCard";
+import { AdBanner728, AdBanner300, AdBannerMobile } from "@/components/AdBanners";
 import { Eye, Calendar, ArrowRight } from "lucide-react";
 import type { Post } from "@/types";
 
@@ -47,7 +48,6 @@ export default async function StoryPage({
 
   if (!post) notFound();
 
-  console.log("Post data:", post.image_url);
   // Fire-and-forget view increment
   incrementViews(id);
 
@@ -61,6 +61,29 @@ export default async function StoryPage({
     .order("created_at", { ascending: false })
     .limit(3);
 
+  const paragraphs = typedPost.content
+    .split(/\n{2,}/)
+    .map((paragraph) => paragraph.trim())
+    .filter(Boolean);
+
+  const contentBlocks = paragraphs.flatMap((paragraph, index) => {
+    const blocks = [
+      <p key={`paragraph-${index}`} className="whitespace-pre-wrap">
+        {paragraph}
+      </p>,
+    ];
+
+    if (index === 2) {
+      blocks.push(
+        <div key="ad-middle" className="my-8 flex justify-center">
+          <AdBanner300 />
+        </div>
+      );
+    }
+
+    return blocks;
+  });
+
   return (
     <article className="mx-auto max-w-3xl px-4 py-8 sm:px-6">
       <Link
@@ -70,6 +93,10 @@ export default async function StoryPage({
         <ArrowRight size={14} />
         رجوع إلى القصص
       </Link>
+
+      <div className="mb-8">
+        <AdBanner728 />
+      </div>
 
       {typedPost.category && (
         <span className="mb-3 inline-block rounded-full bg-primary-50 px-3 py-1 text-xs font-semibold text-primary-700">
@@ -105,13 +132,18 @@ export default async function StoryPage({
         </div>
       )}
 
-      <div className="prose prose-neutral mt-8 max-w-none whitespace-pre-wrap font-arabic text-lg leading-9 text-neutral-800">
-        {typedPost.content}
+      <div className="prose prose-neutral mt-8 max-w-none space-y-6 font-arabic text-lg leading-9 text-neutral-800">
+        {contentBlocks}
+      </div>
+
+     <div className="mt-8 flex justify-center lg:hidden">
+        <AdBannerMobile />
       </div>
 
       <div className="mt-8 border-t border-neutral-200 pt-6">
         <LikeButton postId={typedPost.id} initialLikes={typedPost.likes} />
       </div>
+        <div id="container-515cdc36e4304b0c9d8a061b8f64cad8"></div>
 
       {related && related.length > 0 && (
         <section className="mt-12">
